@@ -118,8 +118,8 @@ jobs:
   
       - name: Publish Docker images
         run: |
-          docker tag Authservice:latest 11112002/Authservice:latest
-          docker push 11112002/Authservice:latest
+          docker tag authservice:latest 11112002/authservice:latest
+          docker push 11112002/authservice:latest
   
       - name: Clean up Docker containers
         run: docker-compose -f "AuthService/docker-compose.yml" down
