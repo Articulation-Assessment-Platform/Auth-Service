@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "UZVbx4KJwiDI0zGinpdCKz9Aa+8MJ7qy290hlI+8KXI=",
+  "Source": "AuthServiceLayer",
+  "BasePath": "_content/AuthServiceLayer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\maike\\Articulation-Assessment-Platform\\Auth-Service\\AuthService\\AuthRepositoryLayer\\AuthRepositoryLayer.csproj",
+      "Version": 2,
+      "Source": "AuthRepositoryLayer",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
