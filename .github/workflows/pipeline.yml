@@ -39,7 +39,7 @@ jobs:
           dotnet-version: 6.x
   
       - name: Restore dependencies
-        run: dotnet restore 'AuthService/AuthTest/AuthTest.csproj'
+        run: dotnet restore 'AuthTest/AuthTest.csproj'
   
       - name: Install ReportGenerator
         run: dotnet tool install dotnet-reportgenerator-globaltool --tool-path .
@@ -93,7 +93,7 @@ jobs:
         run: |
           ./.sonar/scanner/dotnet-sonarscanner begin /k:"Articulation-Assessment-Platform_Auth-Service" /o:"articulation-assessment-platform" /d:sonar.token=${{ secrets.SONAR_TOKEN }} /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.vscoveragexml.reportsPaths=coverage.xml
           dotnet build 'AuthService/AuthAPI/AuthAPI.csproj' --no-incremental
-          dotnet test 'AuthService/AuthTest/AuthTest.csproj' --collect "Code Coverage"
+          dotnet test 'AuthTest/AuthTest.csproj' --collect "Code Coverage"
           ./.sonar/scanner/dotnet-sonarscanner end /d:sonar.token=${{ secrets.SONAR_TOKEN }}
 
   docker:
