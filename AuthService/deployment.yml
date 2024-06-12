@@ -1,19 +1,26 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: authservice-deployment
+  name: auth-api
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: authservice
+      app: auth-api
   template:
     metadata:
       labels:
-        app: authservice
+        app: auth-api
     spec:
       containers:
-      - name: authservice
+      - name: auth-api
         image: 11112002/authservice:latest
+        resources:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            cpu: 250m
+            memory: 256Mi
         ports:
         - containerPort: 5330
