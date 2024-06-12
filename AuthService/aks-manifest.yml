@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: auth-service
-        image: 11112002/frontend:latest
+        image: 11112002/authservice:latest
         ports:
         - containerPort: 8080
 
@@ -31,4 +31,4 @@ spec:
   ports:
     - protocol: TCP
       port: 8080
-      targetPort: 5110
+      targetPort: 5330
