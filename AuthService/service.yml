@@ -9,4 +9,4 @@ spec:
     - protocol: TCP
       port: 5330
       targetPort: 5330
-  type: LoadBalancer 
+  type: ClusterIP 
