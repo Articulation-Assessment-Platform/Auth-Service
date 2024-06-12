@@ -139,5 +139,4 @@ jobs:
 
       - name: Apply Kubernetes manifests
         run: |
-          kubectl apply -f "AuthService/deployment.yml"
-          kubectl apply -f "AuthService/service.yml"
+          kubectl apply -f "AuthService/aks-manifest.yml"
