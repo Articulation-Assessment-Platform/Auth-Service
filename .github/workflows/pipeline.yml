@@ -135,7 +135,7 @@ jobs:
         run: az login --service-principal -u ${{ secrets.AZURE_CLIENT_ID }} -p ${{ secrets.AZURE_CLIENT_SECRET }} --tenant ${{ secrets.AZURE_TENANT_ID }}
 
       - name: Set Kubeconfig
-        run: az aks get-credentials --resource-group 'Articulation-Assessment-Platform' --name 'aks-articulation'
+        run: az aks get-credentials --resource-group 'Articulation-Assessment-Platform' --name 'aks-articu'
 
       - name: Apply Kubernetes manifests
         run: |
