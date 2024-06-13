@@ -8,10 +8,12 @@ spec:
   selector:
     matchLabels:
       app: auth-service
+      tier: backend
   template:
     metadata:
       labels:
         app: auth-service
+        tier: backend
     spec:
       containers:
       - name: auth-service
@@ -37,5 +39,5 @@ spec:
     app: auth-service
   ports:
     - protocol: TCP
-      port: 5330
+      port: 8080
       targetPort: 8080
