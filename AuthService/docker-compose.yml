@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  authservice:
+    image: authservice:latest
+    networks:
+        - backend
+    build:
+      context: .
+      dockerfile: AuthAPI/Dockerfile
+
+networks:
+  backend:
+    name: backend
+    external: true
+    driver: bridge
