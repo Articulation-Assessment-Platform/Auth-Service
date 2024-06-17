@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   authservice:
-    image: authapi:dev
+    image: authservice:dev
     container_name: "AuthAPI"
     build:
       args:

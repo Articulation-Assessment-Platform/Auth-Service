@@ -128,3 +128,6 @@ C:\Users\maike\Articulation-Assessment-Platform\Auth-Service\AuthService\AuthAPI
 C:\Users\maike\Articulation-Assessment-Platform\Auth-Service\AuthService\AuthAPI\bin\Debug\net8.0\Microsoft.Azure.Amqp.dll
 C:\Users\maike\Articulation-Assessment-Platform\Auth-Service\AuthService\AuthAPI\bin\Debug\net8.0\System.ClientModel.dll
 C:\Users\maike\Articulation-Assessment-Platform\Auth-Service\AuthService\AuthAPI\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\maike\Articulation-Assessment-Platform\Auth-Service\AuthService\AuthAPI\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\maike\Articulation-Assessment-Platform\Auth-Service\AuthService\AuthAPI\bin\Debug\net8.0\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\maike\Articulation-Assessment-Platform\Auth-Service\AuthService\AuthAPI\bin\Debug\net8.0\Moq.dll

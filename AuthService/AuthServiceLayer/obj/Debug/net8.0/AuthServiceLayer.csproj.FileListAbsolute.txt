@@ -55,3 +55,6 @@ C:\Users\maike\Articulation-Assessment-Platform\Auth-Service\AuthService\AuthSer
 C:\Users\maike\Articulation-Assessment-Platform\Auth-Service\AuthService\AuthServiceLayer\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\maike\Articulation-Assessment-Platform\Auth-Service\AuthService\AuthServiceLayer\bin\Debug\net8.0\System.ClientModel.dll
 C:\Users\maike\Articulation-Assessment-Platform\Auth-Service\AuthService\AuthServiceLayer\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\maike\Articulation-Assessment-Platform\Auth-Service\AuthService\AuthServiceLayer\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\maike\Articulation-Assessment-Platform\Auth-Service\AuthService\AuthServiceLayer\bin\Debug\net8.0\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\maike\Articulation-Assessment-Platform\Auth-Service\AuthService\AuthServiceLayer\bin\Debug\net8.0\Moq.dll
