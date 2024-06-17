@@ -1,0 +1,43 @@
+name: dockercompose8472608135441665166
+services:
+  authapi:
+    build:
+      context: C:\Users\maike\Articulation-Assessment-Platform\Auth-Service\AuthService
+      dockerfile: AuthAPI/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "5300"
+      ASPNETCORE_HTTPS_PORTS: "5301"
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 5300
+        published: "5300"
+        protocol: tcp
+      - mode: ingress
+        target: 5301
+        published: "5301"
+        protocol: tcp
+      - mode: ingress
+        target: 5300
+        protocol: tcp
+      - mode: ingress
+        target: 5301
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\maike\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\maike\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+networks:
+  default:
+    name: dockercompose8472608135441665166_default
