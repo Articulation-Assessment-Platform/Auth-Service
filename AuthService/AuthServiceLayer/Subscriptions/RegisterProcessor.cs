@@ -89,7 +89,8 @@ namespace AuthServiceLayer.Subscriptions
             using (var scope = _scopeFactory.CreateScope())
             {
                 var authService = scope.ServiceProvider.GetRequiredService<IAuthService>();
-                // Implement your register logic here
+                User user = new User { UserId = message.Id, Email = message.Email, Password = message.Password, Role = message.Role };
+                authService.Register(user);
             }
         }
     }
