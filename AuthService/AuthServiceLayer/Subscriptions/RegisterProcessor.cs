@@ -1,3 +1,4 @@
+using AuthServiceLayer.Models;
 ﻿using AuthServiceLayer.Services;
 using Azure.Messaging.ServiceBus;
 using System.Text.Json;
