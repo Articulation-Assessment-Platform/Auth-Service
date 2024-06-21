@@ -138,7 +138,7 @@ jobs:
 
       - name: Apply Kubernetes manifests
         run: |
-          kubectl replace -f "AuthService/aks-manifest.yml"
+          kubectl delete -f "AuthService/aks-manifest.yml" && kubectl apply -f "AuthService/aks-manifest.yml"
 
   automated-api-tests:
     needs: deploy
